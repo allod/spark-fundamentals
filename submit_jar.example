@@ -1,0 +1,1 @@
+./bin/spark-submit --conf spark.eventLog.enabled=true --class training.day1.wordcount.WordCountJava ../SparkProject/target/uber-seminar.spark.overview-1.0-SNAPSHOT.jar

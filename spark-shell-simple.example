@@ -1,0 +1,12 @@
+//cd to spark directory
+//start spark-shell in local mode
+./bin/spark-shell
+
+//create some data
+val data = List(1, 2, 5, 4, 7, 3)
+
+val distributedData = sc.parallelize(data)
+
+val squares = distributedData.map(x => x * x)
+
+squares.collect
